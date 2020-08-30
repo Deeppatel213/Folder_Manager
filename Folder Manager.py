@@ -91,6 +91,8 @@ def sub_func():
         tk.messagebox.askretrycancel('Error', 'Please Select Right Value')
     except FileNotFoundError:
         tk.messagebox.askretrycancel('Error', 'Path Not Found')
+    except:
+        return
     e2var.set('')
     if color_changer%2==1:
         root.configure(bg='#61FF00')
@@ -101,7 +103,6 @@ def sub_func():
         root.configure(bg='#00FFFF')
         lable1.configure(bg='#00FFFF')
         lable0.configure(bg='#00FFFF')
-        
         l2.configure(bg='#00FFFF')
 submit_butt=ttk.Button(text="Submit",command=sub_func)
 submit_butt.grid(row=3,columnspan=3)
