@@ -101,6 +101,7 @@ def sub_func():
         root.configure(bg='#00FFFF')
         lable1.configure(bg='#00FFFF')
         lable0.configure(bg='#00FFFF')
+        
         l2.configure(bg='#00FFFF')
 submit_butt=ttk.Button(text="Submit",command=sub_func)
 submit_butt.grid(row=3,columnspan=3)
